@@ -5,7 +5,7 @@ import { List } from './List.js';
 import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
 import { Jumbotron } from './components/Jumbotron';
-
+import { Channel } from './components/Channel';
 
 class App extends Component {
   render() {
@@ -17,7 +17,8 @@ class App extends Component {
           <Layout>
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/list" component={List} />
+              <Route exact path="/list" component={List} />
+              <Route path="/list/:channelId" component={Channel}/>
             </Switch>
           </Layout>
         </Router>

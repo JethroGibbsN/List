@@ -18,7 +18,7 @@ const Styles = styled.div`
 export const NavigationBar = () => (
   <Styles>
     <Navbar expand="lg">
-      <Navbar.Brand href="/">Profile</Navbar.Brand>
+      <Navbar.Brand href="/">NewsPoint</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
@@ -29,7 +29,7 @@ export const NavigationBar = () => (
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <Link to="/list">List</Link>
+              <Link to="/list">Channels List</Link>
             </Nav.Link>
           </Nav.Item>
         </Nav>
